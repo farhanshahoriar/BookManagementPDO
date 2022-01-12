@@ -1,7 +1,7 @@
 <?php
     function create_if_not_exists($db){
         $q_str = "CREATE TABLE IF NOT EXISTS books(
-            id INT UNSIGNED NOT NULL PRIMARY KEY AUTOINCREMENT,
+            id INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
             title VARCHAR(200),
             author VARCHAR(200),
             available VARCHAR(200),

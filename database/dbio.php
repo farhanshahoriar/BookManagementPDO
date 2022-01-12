@@ -1,4 +1,4 @@
-<?
+<?php
     function addBook($db, $title, $author, $available, $pages, $isbn){
 
         $qry = "INSERT INTO books (title, author, available, pages, isbn)

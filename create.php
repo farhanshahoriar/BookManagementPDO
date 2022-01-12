@@ -4,7 +4,7 @@
         require 'database/connection.php';
         require 'database/dbio.php';
         
-        $dp = Connect();
+        $db = Connect();
         $available = 'false';
         if("on" == $_GET['available']) $available = 'true';
         addBook($db,$_GET['title'], $_GET['author'], $available , $_GET['pages'], $_GET['isbn']);

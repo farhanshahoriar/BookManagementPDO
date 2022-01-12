@@ -8,9 +8,13 @@
             $conn = new PDO("mysql:host=$server_name; dbname=$db_name", $username, $password);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $conn;
-          } catch(PDOException $e) {
+        } catch(PDOException $e) {
             echo $e;
             return -1;
-          }
+        }
+        // $server_name = "localhost";
+        // $username = "root";
+        // $password = "";
+        // $db_name = "books";
     }
 ?>
